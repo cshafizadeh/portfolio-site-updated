@@ -1,0 +1,30 @@
+#projectsPage {
+  font-family: 'Inter', sans-serif;
+}
+.modal-lg {
+  color: #111;
+}
+.modal-content {
+  font-family: 'Mulish', sans-serif;
+}
+.modal-header {
+  letter-spacing: 1px;
+}
+.languages {
+  display: flex;
+}
+.languageLogo svg {
+  font-size: 40px;
+  margin: 10px;
+}
+.projectLink {
+  font-size: 36px;
+  margin: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.projectLink:hover {
+  color: #ff6347;
+}
+.embed iframe {
+  border: 1px solid #111;
+}

@@ -1,0 +1,13 @@
+#Header {
+  font-family: 'Mulish', sans-serif;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+}
+
+.nav-link:hover {
+  color: #ff6347;
+}

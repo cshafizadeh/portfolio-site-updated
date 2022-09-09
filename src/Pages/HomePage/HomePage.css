@@ -1,0 +1,116 @@
+#HomePage {
+  width: 100%;
+  min-height: 95vh;
+  background: no-repeat center/cover url('../../Components/img/homeScreen.jpg');
+  overflow: hidden;
+}
+h3 {
+  letter-spacing: 3px;
+}
+h1 {
+  letter-spacing: 5px;
+}
+.info-container {
+  max-width: 800px;
+}
+.projectsButton {
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.1s ease-in-out;
+}
+.projectsButton:hover {
+  transform: scale(1.1);
+  border: 3px solid #ff6347;
+  color: #ff6347;
+  cursor: pointer;
+}
+.projectsButton:hover a {
+  color: #ff6347;
+}
+#projects {
+  width: 100%;
+  min-height: 100vh;
+  background: no-repeat center/cover
+    url('../../Components/img/projectsScreen.jpg');
+  overflow: hidden;
+}
+.projectsTitle {
+  font-family: 'inter', sans-serif;
+  font-weight: 900;
+}
+.allProjectsButton {
+  width: 250px;
+  height: 80px;
+  border-radius: 40px;
+  border: 1px solid #ffffff;
+  text-align: center;
+  font-family: 'inter', sans-serif;
+  transition: all 0.1s ease-in-out;
+}
+.allProjectsButton:hover {
+  transform: scale(1.1);
+  border: 1px solid #ff6347;
+  color: #ff6347;
+  cursor: pointer;
+}
+.allProjectsButton:hover a {
+  color: #ff6347;
+}
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projectCard {
+  margin: 10px auto;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ffffff;
+  transition: all 0.1s ease-in-out;
+  overflow: hidden;
+}
+.projectCard:hover {
+  transform: scale(1.1);
+}
+.projectBackground {
+  object-fit: fill;
+  opacity: 50%;
+}
+.projectName {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  margin: 10px;
+  visibility: visible;
+}
+.projectCard:hover .projectName {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+.projectName {
+  font-size: 200%;
+  font-family: 'inter', sans-serif;
+}
+.projectDescription {
+  position: absolute;
+  top: 0;
+  margin: 10px;
+  z-index: 100;
+  font-size: 80%;
+  letter-spacing: 1px;
+  visibility: hidden;
+  font-family: 'inter', sans-serif;
+}
+.projectCard:hover .projectDescription {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 2s 0.25s, opacity 2s linear;
+}
+.projectCard a:hover {
+  color: #ff6347;
+}

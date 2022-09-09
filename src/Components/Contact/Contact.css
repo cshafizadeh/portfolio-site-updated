@@ -1,0 +1,71 @@
+#Contact {
+  background: no-repeat center/cover
+    url('../../Components/img/contactScreen.jpg');
+  font-family: 'Inter', sans-serif;
+}
+.contactInfo h1 {
+  font-size: 400%;
+}
+.contactEmail {
+  display: flex;
+  width: 100%;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.contactPhone {
+  display: flex;
+  width: 100%;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.contactForm input {
+  width: 100%;
+  color: #ffffff;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid #ffffff;
+}
+.contactForm textarea {
+  width: 100%;
+  color: #ffffff;
+  background-color: transparent;
+  border-color: transparent;
+  border: 1px solid #ffffff;
+}
+.contactForm input:focus {
+  outline: none;
+}
+.contactForm textarea:focus {
+  outline: none;
+}
+.submitButton {
+  width: 200px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 24px;
+  transition: all 0.1s ease-in-out;
+}
+.submitButton:hover {
+  transform: scale(1.1);
+  color: #ff6347;
+  border-color: #ff6347;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 30px #1d1d1d inset !important;
+  box-shadow: 0 0 0 30px #1d1d1d inset !important;
+  transition: background-color 500000s ease-in-out 0s;
+  caret-color: white;
+}
