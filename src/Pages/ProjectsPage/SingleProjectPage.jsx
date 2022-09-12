@@ -5,6 +5,7 @@ import { projectData } from './projectData';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Carousel from 'react-bootstrap/Carousel';
 
 export default function SingleProjectPage() {
   const params = useParams();
@@ -16,6 +17,7 @@ export default function SingleProjectPage() {
     description: '',
     features: [],
     languages: [],
+    images: [],
     code: '',
   });
   const { id } = params;
@@ -24,6 +26,7 @@ export default function SingleProjectPage() {
       for (let i = 0; i < projectData.length; i++) {
         if (projectData[i].id === id.toLowerCase()) {
           setProject(projectData[i]);
+          console.log(project);
           break;
         }
       }
@@ -89,6 +92,28 @@ export default function SingleProjectPage() {
             <Container>
               <div className="singleProjectImages my-3">
                 <h3>IMAGES</h3>
+                <div className="singleProjectEmbed my-3">
+                  {dataEmbed(project.embed)}
+                </div>
+                {project.images.length > 0 ? (
+                  <div className="singleProjectCarousel my-5">
+                    <Carousel variant="dark">
+                      {project.images.map((image, key) => {
+                        return (
+                          <Carousel.Item key={key}>
+                            <img
+                              className="d-block w-100"
+                              src={image}
+                              alt="First slide"
+                            />
+                          </Carousel.Item>
+                        );
+                      })}
+                    </Carousel>
+                  </div>
+                ) : (
+                  <></>
+                )}
               </div>
             </Container>
           </Col>

@@ -18,7 +18,6 @@ export default function Header() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto  w-100  justify-content-end">
               <Nav.Link href="/">HOME</Nav.Link>
-              <Nav.Link href="/">ABOUT ME</Nav.Link>
               <Nav.Link href="/projects">PROJECTS</Nav.Link>
               <Nav.Link
                 href="https://www.linkedin.com/in/cshafizadeh"
@@ -34,7 +33,7 @@ export default function Header() {
               >
                 GITHUB
               </Nav.Link>
-              <Nav.Link href="#Contact">CONTACT</Nav.Link>
+              <Nav.Link href="/about">ABOUT ME / CONTACT</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

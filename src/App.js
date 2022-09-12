@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Components/Footer/Footer';
 import ProjectsPage from './Pages/ProjectsPage/ProjectsPage';
 import SingleProjectPage from './Pages/ProjectsPage/SingleProjectPage';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import ErrorPage from './Pages/ErrorPage/ErrorPage';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:id" element={<SingleProjectPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

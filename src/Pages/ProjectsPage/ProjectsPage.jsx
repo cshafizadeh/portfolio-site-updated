@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import { Helmet } from 'react-helmet-async';
 import './ProjectsPage.css';
@@ -7,16 +7,6 @@ import { useNavigate } from 'react-router-dom';
 
 export default function ProjectsPage() {
   const navigate = useNavigate();
-  const [currentProject, setCurrentProject] = useState({
-    title: '',
-    link: '',
-    embed: '',
-    background: '',
-    description: '',
-    features: [],
-    languages: [],
-    code: '',
-  });
 
   return (
     <div id="ProjectsPage">
@@ -34,7 +24,6 @@ export default function ProjectsPage() {
               <div
                 className="projectCard"
                 key={key}
-                onMouseEnter={() => setCurrentProject(data)}
                 onClick={() => navigate(`/projects/${data.id}`)}
                 style={{ cursor: 'pointer' }}
               >
@@ -43,15 +32,14 @@ export default function ProjectsPage() {
                   src={data.background}
                   alt={data.title}
                 />
-                <h3 className="projectName">{data.title}</h3>
-                <div className="projectDescription">
-                  <p>{data.description}</p>
-                </div>
+                <h3 className="singleProjectName">{data.title}</h3>
+                <p className="clickForDetails">CLICK FOR DETAILS</p>
               </div>
             );
           })}
         </div>
       </Container>
+      <br />
     </div>
   );
 }

@@ -13,20 +13,21 @@ h1 {
 .info-container {
   max-width: 800px;
 }
-.projectsButton {
+.projectsButton button {
   width: 300px;
+  font-size: 28px;
   height: 100px;
   border-radius: 50px;
   border: 3px solid #ffffff;
   color: #ffffff;
+  background-color: transparent;
   text-align: center;
   transition: all 0.1s ease-in-out;
 }
-.projectsButton:hover {
+.projectsButton:hover button {
   transform: scale(1.1);
   border: 3px solid #ff6347;
   color: #ff6347;
-  cursor: pointer;
 }
 .projectsButton:hover a {
   color: #ff6347;
@@ -42,16 +43,18 @@ h1 {
   font-family: 'inter', sans-serif;
   font-weight: 900;
 }
-.allProjectsButton {
+.allProjectsButton button {
   width: 250px;
   height: 80px;
   border-radius: 40px;
+  font-size: 23px;
   border: 1px solid #ffffff;
-  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
   font-family: 'inter', sans-serif;
   transition: all 0.1s ease-in-out;
 }
-.allProjectsButton:hover {
+.allProjectsButton:hover button {
   transform: scale(1.1);
   border: 1px solid #ff6347;
   color: #ff6347;
@@ -75,6 +78,7 @@ h1 {
 }
 .projectCard:hover {
   transform: scale(1.1);
+  box-shadow: 0px 0px 40px 4px #ff6347;
 }
 .projectBackground {
   object-fit: fill;
@@ -86,15 +90,13 @@ h1 {
   top: 0;
   margin: 10px;
   visibility: visible;
+  font-size: 200%;
+  font-family: 'inter', sans-serif;
 }
 .projectCard:hover .projectName {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 0.2s, opacity 0.2s linear;
-}
-.projectName {
-  font-size: 200%;
-  font-family: 'inter', sans-serif;
 }
 .projectDescription {
   position: absolute;

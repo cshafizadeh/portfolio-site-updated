@@ -1,0 +1,28 @@
+#AboutPage {
+  background: no-repeat center/cover url('../../Components/img/AboutScreen.jpg');
+}
+.skillsDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 145%;
+}
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 60px;
+}
+.resume-button button {
+  width: 150px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.resume-button button:hover {
+  transform: scale(1.1);
+  border: 1px solid #ff6347;
+  color: #ff6347;
+}

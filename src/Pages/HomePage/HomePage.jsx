@@ -9,9 +9,12 @@ import YosemiteBackground from '../../Components/img/YosemiteBackground.jpg';
 import EcommerceBackground from '../../Components/img/EcommerceBackground.jpg';
 import DiscordBackground from '../../Components/img/DiscordBackground.jpg';
 import StockBackground from '../../Components/img/StockBackground.jpg';
+// eslint-disable-next-line no-unused-vars
 import Contact from '../../Components/Contact/Contact';
+import { useNavigate } from 'react-router-dom';
 
 export default function HomePage() {
+  const navigate = useNavigate();
   return (
     <div id="main">
       <Helmet>
@@ -34,15 +37,7 @@ export default function HomePage() {
           </div>
           <div className="projectsButton m-5">
             <a href="#projects">
-              <h3
-                style={{
-                  position: 'relative',
-                  top: '35%',
-                  fontWeight: '100',
-                }}
-              >
-                SEE MY WORK →
-              </h3>
+              <button>SEE MY WORK →</button>
             </a>
           </div>
         </div>
@@ -62,7 +57,7 @@ export default function HomePage() {
                 <p>
                   This web application uses BART API data to retrieve
                   information about current and upcoming train schedules,
-                  allowing the user to find the destinations, and arrival times
+                  allowing the user to find the destinations and arrival times
                   of trains at a station.
                 </p>
                 <a
@@ -84,7 +79,7 @@ export default function HomePage() {
               <div className="projectDescription">
                 <p>
                   SQL database with full CRUD functionality. Implements
-                  one-to-one, one-two-many, and many-to-many relationships,
+                  one-to-one, one-to-many, and many-to-many relationships,
                   allowing the user to add, edit, update, and delete orders,
                   customers, and products.
                 </p>
@@ -138,7 +133,7 @@ export default function HomePage() {
               <h3 className="projectName">E-COMMERCE WEBSITE</h3>
               <div className="projectDescription">
                 <p>
-                  Full-Stack website using CRUD stack. React reducer and local
+                  Full-Stack website using MERN stack. React reducer and local
                   storage manage state and remember users. Users can update
                   their profile and order products. Admins can create, edit,
                   update, and delete users, products, and orders.
@@ -162,9 +157,9 @@ export default function HomePage() {
               <div className="projectDescription">
                 <p>
                   Custom discord bot made from scratch using discordjs. Discord
-                  bot has a wide variety of features such as playing music, get
-                  info on your favorite Pokémon, and even retrieve tweets and
-                  twitter accounts using Twitters developer API.
+                  bot has a wide variety of features such as playing music,
+                  getting info on your favorite Pokémon, and even retrieving
+                  tweets and Twitter accounts using Twitters developer API.
                 </p>
                 <a
                   href="https://github.com/cshafizadeh/discordBot"
@@ -186,7 +181,7 @@ export default function HomePage() {
                 <p>
                   Website using Polygons stock API. Allows user to select a
                   stock symbol and date, and will return the high, low, opening,
-                  and closing values for selected date.
+                  and closing values for the selected date.
                 </p>
                 <a
                   href="https://github.com/cshafizadeh/ApiProjects/tree/master/src/Components/stocks"
@@ -199,21 +194,12 @@ export default function HomePage() {
             </div>
           </div>
           <div className="allProjectsButton my-5">
-            <a href="/projects">
-              <p
-                style={{
-                  position: 'relative',
-                  top: '35%',
-                  fontSize: 'large',
-                }}
-              >
-                ALL PROJECTS →
-              </p>
-            </a>
+            <button onClick={() => navigate('/projects')}>
+              ALL PROJECTS →
+            </button>
           </div>
         </Container>
       </div>
-      <Contact />
       <SocialButtons />
     </div>
   );
