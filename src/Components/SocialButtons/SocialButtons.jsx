@@ -35,7 +35,7 @@ export default function SocialButtons() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://instagram.com/cshfzdh"
+          href="https://www.instagram.com/cshafizadeh/"
         >
           <i className="bi bi-instagram"></i>
         </a>

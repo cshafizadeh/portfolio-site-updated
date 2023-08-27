@@ -2,5 +2,6 @@ import React from 'react';
 import './Footer.css';
 
 export default function Footer() {
-  return <div id="Footer">CYRUS SHAFIZADEH © 2022</div>;
+  let date = new Date().getFullYear().toLocaleString().replace(',', '');
+  return <div id="Footer">CYRUS SHAFIZADEH © {date}</div>;
 }

@@ -9,6 +9,8 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 60px;
+  align-items: center;
+  justify-content: center;
 }
 .resume-button button {
   width: 150px;
@@ -25,4 +27,19 @@
   transform: scale(1.1);
   border: 1px solid #ff6347;
   color: #ff6347;
+}
+
+.skillsDescription a {
+  font-size: 100%;
+  transition: all 0.1s ease-in-out;
+}
+
+.skillsDescription:hover a {
+  transform: scale(1.1);
+  color: #ff6347;
+}
+
+.skillsDescription a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

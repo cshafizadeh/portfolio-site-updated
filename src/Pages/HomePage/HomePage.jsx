@@ -32,7 +32,7 @@ export default function HomePage() {
                 fontFamily: 'Inter, sans-serif',
               }}
             >
-              WEB DEVELOPER, PROBLEM SOLVER
+              PRODUCT DEVELOPER, PROBLEM SOLVER
             </p>
           </div>
           <div className="projectsButton m-5">

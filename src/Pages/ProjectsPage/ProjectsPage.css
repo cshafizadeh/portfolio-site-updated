@@ -1,5 +1,6 @@
 #projectsPage {
   font-family: 'Inter', sans-serif;
+  overflow: hidden;
 }
 .modal-lg {
   color: #111;
@@ -10,8 +11,12 @@
 .modal-header {
   letter-spacing: 1px;
 }
+.projectCard {
+  overflow: hidden;
+}
 .languages {
   display: flex;
+  flex-wrap: wrap;
 }
 .languageLogo svg {
   font-size: 40px;
