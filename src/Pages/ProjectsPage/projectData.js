@@ -1,7 +1,13 @@
 // eslint-disable-next-line no-unused-vars
-import { FaPython, FaCcPaypal, FaBootstrap, FaNode } from 'react-icons/fa';
+import { FaCcPaypal, FaBootstrap, FaNode, FaAws } from 'react-icons/fa';
 import { FiFigma } from 'react-icons/fi';
-import { SiJavascript, SiMysql, SiMongodb } from 'react-icons/si';
+import {
+  SiJavascript,
+  SiMysql,
+  SiMongodb,
+  SiFirebase,
+  SiOpenai,
+} from 'react-icons/si';
 import { DiReact, DiCss3 } from 'react-icons/di';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { TiHtml5 } from 'react-icons/ti';
@@ -14,6 +20,7 @@ import DiscordBackground from '../../Components/img/DiscordBackground.jpg';
 import EcommerceBackground from '../../Components/img/EcommerceBackground.jpg';
 import StockBackground from '../../Components/img/StockBackground.jpg';
 import PortfolioBackground from '../../Components/img/PortfolioBackground.jpg';
+import TwitterBackground from '../../Components/img/TwitterBackground.jpg';
 import GsceHomePage from '../../Components/img/Gsce/GsceHomePage.jpg';
 import GsceDonatePage from '../../Components/img/Gsce/GsceDonatePage.jpg';
 import GsceGrantsPage from '../../Components/img/Gsce/GsceGrantsPage.jpg';
@@ -45,6 +52,10 @@ import DiscordBotTwitterAccount from '../../Components/img/DiscordBot/DiscordBot
 import DiscordBotTwitterRecent from '../../Components/img/DiscordBot/DiscordBotTwitterRecent.jpg';
 import DiscordBotMusic from '../../Components/img/DiscordBot/DiscordBotMusic.jpg';
 import DiscordBotPokemon from '../../Components/img/DiscordBot/DiscordBotPokemon.jpg';
+import MotivationBotAWS from '../../Components/img/MotivationBot/MotivationBotAWS.jpg';
+import MotivationBotJSON from '../../Components/img/MotivationBot/MotivationBotJSON.jpg';
+import MotivationBotTweet from '../../Components/img/MotivationBot/MotivationBotTweet.jpg';
+import MotivationBotFirebase from '../../Components/img/MotivationBot/MotivationBotFirebase.jpg';
 
 export const projectData = [
   {
@@ -233,6 +244,34 @@ export const projectData = [
     ],
     code: 'https://github.com/cshafizadeh/portfolio-site-updated',
   },
+  {
+    id: 'twitter-bot',
+    title: 'TWITTER BOT',
+    link: 'https://twitter.com/MotivativeWords',
+    embed: '',
+    background: TwitterBackground,
+    description:
+      'This is an ongoing experiment to see the results of consistent media posting over a long period of time. Beginning in September of 2023, the bot posts 2 tweets every day. Currently, the bot has ',
+    features: [
+      'Firebase function authenticates bot to twitter account, generates tweet using OpenAI API, then posts the tweet.',
+      'Previously generated responses are stored in a Firebase db in order to ensure generated tweets are new and unique from previous ones.',
+      'AWS Event Bridge executes this script twice a day, creating a 100% autonomous system that generates new content daily.',
+    ],
+    languages: [
+      <SiFirebase />,
+      <FaAws />,
+      <SiOpenai />,
+      <SiJavascript />,
+      <AiOutlineTwitter />,
+    ],
+    images: [
+      MotivationBotTweet,
+      MotivationBotJSON,
+      MotivationBotFirebase,
+      MotivationBotAWS,
+    ],
+    code: 'https://github.com/cshafizadeh/XBot',
+  },
 ];
 
 /*
@@ -245,6 +284,7 @@ export const projectData = [
     description: '',
     features: [],
     languages: [],
+    images: [],
     code: '',
   }
   */

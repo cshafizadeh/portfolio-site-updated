@@ -21,6 +21,7 @@ import {
   SiCsharp,
   SiRuby,
   SiRubyonrails,
+  SiFirebase,
 } from 'react-icons/si';
 import { TbBrandPython } from 'react-icons/tb';
 import { FaNode } from 'react-icons/fa';
@@ -44,6 +45,7 @@ export default function AboutPage() {
     <SiFigma />,
     <SiRuby />,
     <SiRubyonrails />,
+    <SiFirebase />,
   ];
   return (
     <div id="AboutPage" className="mt-5">

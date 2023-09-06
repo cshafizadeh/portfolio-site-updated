@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import './HomePage.css';
+import { Helmet } from 'react-helmet-async';
 import SocialButtons from '../../Components/SocialButtons/SocialButtons.jsx';
 import Container from 'react-bootstrap/esm/Container';
 import BartBackground from '../../Components/img/Bart.jpg';
@@ -8,9 +8,7 @@ import SqlBackground from '../../Components/img/SqlBackground.jpg';
 import YosemiteBackground from '../../Components/img/YosemiteBackground.jpg';
 import EcommerceBackground from '../../Components/img/EcommerceBackground.jpg';
 import DiscordBackground from '../../Components/img/DiscordBackground.jpg';
-import StockBackground from '../../Components/img/StockBackground.jpg';
-// eslint-disable-next-line no-unused-vars
-import Contact from '../../Components/Contact/Contact';
+import TwitterBackground from '../../Components/img/TwitterBackground.jpg';
 import { useNavigate } from 'react-router-dom';
 
 export default function HomePage() {
@@ -173,22 +171,32 @@ export default function HomePage() {
             <div className="projectCard">
               <img
                 className="projectBackground"
-                src={StockBackground}
+                src={TwitterBackground}
                 alt="Sql Background"
               />
-              <h3 className="projectName">STOCK API</h3>
+              <h3 className="projectName">TWITTER BOT</h3>
               <div className="projectDescription">
                 <p>
-                  Website using Polygons stock API. Allows user to select a
-                  stock symbol and date, and will return the high, low, opening,
-                  and closing values for the selected date.
+                  An autonomous script that generates and posts unique tweets
+                  using OpenAI's API and OAuth2 authentication. It stores past
+                  responses in Firebase for context and runs automatically on
+                  AWS twice daily, ensuring a continuous stream of original
+                  tweets.
                 </p>
                 <a
-                  href="https://github.com/cshafizadeh/ApiProjects/tree/master/src/Components/stocks"
+                  href="https://github.com/cshafizadeh/XBot"
                   target="_blank"
                   rel="noreferrer"
                 >
                   GitHub →
+                </a>
+                <br />
+                <a
+                  href="https://twitter.com/MotivativeWords"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit →
                 </a>
               </div>
             </div>
