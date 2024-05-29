@@ -3,4 +3,8 @@
   text-align: center;
   border-top: 1px solid #ffffff;
   font-size: small;
+  margin-top: auto;
+  position: relative;
+  top: 0;
+  left: 0;
 }

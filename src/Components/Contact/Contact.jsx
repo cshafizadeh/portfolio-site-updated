@@ -39,7 +39,7 @@ export default function Contact() {
       );
   };
   return (
-    <div id="Contact" className="py-5">
+    <div id="Contact" className="py-3">
       <Container>
         <Row>
           <h1 className="my-3">CONTACT ME!</h1>

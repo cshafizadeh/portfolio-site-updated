@@ -22,6 +22,10 @@ import {
   SiRuby,
   SiRubyonrails,
   SiFirebase,
+  SiUnity,
+  SiUnrealengine,
+  SiCypress,
+  SiPostman,
 } from 'react-icons/si';
 import { TbBrandPython } from 'react-icons/tb';
 import { FaNode } from 'react-icons/fa';
@@ -46,6 +50,10 @@ export default function AboutPage() {
     <SiRuby />,
     <SiRubyonrails />,
     <SiFirebase />,
+    <SiUnity />,
+    <SiUnrealengine />,
+    <SiCypress />,
+    <SiPostman />,
   ];
   return (
     <div id="AboutPage" className="mt-5">
@@ -60,9 +68,10 @@ export default function AboutPage() {
               <p>
                 I am a 4th-year student at the College of Engineering at Oregon
                 State University currently achieving my Bachelors of Science in
-                computer science and a minor in business. I also work as a
-                Student Software Developer for the Center for Applied Systems
-                and Software{' '}
+                computer science and a minor in business. I currently work as an
+                software engineering intern at Intel, a student researcher in
+                the NVIDIA graphics lab and worked as a Student Software
+                Developer for the Center for Applied Systems and Software{' '}
                 <a
                   className="aboutLink"
                   href="https://cass.oregonstate.edu/"
@@ -92,7 +101,7 @@ export default function AboutPage() {
             </Container>
           </Col>
         </Row>
-        <div className="resume-button m3">
+        <div className="resume-button my-3">
           <a href={Resume} target="_blank" rel="noreferrer">
             <button>RESUME</button>
           </a>

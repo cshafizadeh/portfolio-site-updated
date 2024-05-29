@@ -9,6 +9,7 @@ body {
   --toastify-color-success: #ff6347;
   --toastify-icon-color-success: #ff6347;
   --toastify-color-progress-success: #ff6347;
+  overflow-x: hidden;
 }
 a {
   color: #ffffff;
@@ -16,4 +17,9 @@ a {
 }
 a:hover {
   color: #ffffff;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

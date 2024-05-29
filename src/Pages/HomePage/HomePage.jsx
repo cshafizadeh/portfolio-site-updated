@@ -137,7 +137,7 @@ export default function HomePage() {
                   update, and delete users, products, and orders.
                 </p>
                 <a
-                  href="https://github.com/cshafizadeh/ApiProjects/tree/master/src/Components/bartAPI"
+                  href="https://github.com/cshafizadeh/EcommerceMERN"
                   target="_blank"
                   rel="noreferrer"
                 >

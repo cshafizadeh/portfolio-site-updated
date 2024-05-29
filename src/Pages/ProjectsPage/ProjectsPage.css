@@ -1,7 +1,9 @@
-#projectsPage {
+#ProjectsPage {
   font-family: 'Inter', sans-serif;
   overflow: hidden;
+  margin-bottom: auto;
 }
+
 .modal-lg {
   color: #111;
 }
@@ -43,6 +45,7 @@
   margin: 10px;
   font-size: 200%;
   font-family: 'inter', sans-serif;
+  font-weight: 200;
 }
 .singleProjectEmbed iframe {
   width: 100%;

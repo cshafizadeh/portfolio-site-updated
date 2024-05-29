@@ -91,25 +91,27 @@ export default function SingleProjectPage() {
           <Col md={6}>
             <Container>
               <div className="singleProjectImages my-3">
-                <h3>IMAGES</h3>
                 <div className="singleProjectEmbed my-3">
                   {dataEmbed(project.embed)}
                 </div>
                 {project.images.length > 0 ? (
-                  <div className="singleProjectCarousel my-5">
-                    <Carousel variant="dark">
-                      {project.images.map((image, key) => {
-                        return (
-                          <Carousel.Item key={key}>
-                            <img
-                              className="d-block w-100"
-                              src={image}
-                              alt="First slide"
-                            />
-                          </Carousel.Item>
-                        );
-                      })}
-                    </Carousel>
+                  <div className="imagesContainer">
+                    <h3>IMAGES</h3>
+                    <div className="singleProjectCarousel my-5">
+                      <Carousel variant="dark">
+                        {project.images.map((image, key) => {
+                          return (
+                            <Carousel.Item key={key}>
+                              <img
+                                className="d-block w-100"
+                                src={image}
+                                alt="First slide"
+                              />
+                            </Carousel.Item>
+                          );
+                        })}
+                      </Carousel>
+                    </div>
                   </div>
                 ) : (
                   <></>

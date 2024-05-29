@@ -32,7 +32,7 @@ export default function ProjectsPage() {
                   src={data.background}
                   alt={data.title}
                 />
-                <h3 className="singleProjectName">{data.title}</h3>
+                <h1 className="singleProjectName">{data.title}</h1>
                 <p className="clickForDetails">CLICK FOR DETAILS</p>
               </div>
             );

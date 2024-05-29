@@ -12,7 +12,7 @@ import ErrorPage from './Pages/ErrorPage/ErrorPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter className="flex-wrapper">
       <ToastContainer position="bottom-center" limit={1} />
       <Header />
       <Routes>

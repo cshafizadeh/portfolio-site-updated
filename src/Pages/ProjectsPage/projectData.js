@@ -194,7 +194,7 @@ export const projectData = [
       EcommerceAdminUpdatedProducts,
       EcommerceAdminOrdersDashboard,
     ],
-    code: '',
+    code: 'https://github.com/cshafizadeh/EcommerceMERN',
   },
   {
     id: 'stock-api',
@@ -251,7 +251,7 @@ export const projectData = [
     embed: '',
     background: TwitterBackground,
     description:
-      'This is an ongoing experiment to see the results of consistent media posting over a long period of time. Beginning in September of 2023, the bot posts 2 tweets every day. Currently, the bot has ',
+      'This was a 2 month experiment to see the results of consistent media posting over a long period of time. Beginning in September of 2023, the bot posts 2 tweets every day.',
     features: [
       'Firebase function authenticates bot to twitter account, generates tweet using OpenAI API, then posts the tweet.',
       'Previously generated responses are stored in a Firebase db in order to ensure generated tweets are new and unique from previous ones.',
