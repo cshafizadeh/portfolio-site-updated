@@ -64,14 +64,15 @@ export default function AboutPage() {
         <Row>
           <Col md={6}>
             <h1>ABOUT ME</h1>
-            <div className="skillsDescription m-3">
+            <div className="skillsDescription mx-3 my-5">
               <p>
-                I am a 4th-year student at the College of Engineering at Oregon
-                State University currently achieving my Bachelors of Science in
-                computer science and a minor in business. I currently work as an
-                software engineering intern at Intel, a student researcher in
-                the NVIDIA graphics lab and worked as a Student Software
-                Developer for the Center for Applied Systems and Software{' '}
+                I am a student at the College of Engineering at Oregon State
+                University currently achieving my Bachelors of Science in
+                computer science and a minor in business (June 2025). I
+                currently work as an software engineering intern at Intel, a
+                student researcher in the NVIDIA graphics lab and worked as a
+                Student Software Developer for the Center for Applied Systems
+                and Software{' '}
                 <a
                   className="aboutLink"
                   href="https://cass.oregonstate.edu/"
@@ -83,8 +84,7 @@ export default function AboutPage() {
                 </a>{' '}
                 at Oregon State. My passion is creating unique stylish user
                 experiences that achieve business objectives while scaling and
-                delighting users. I am on a non-stop mission to find an
-                internship in the San Francisco Bay Area this summer.
+                delighting users.
               </p>
             </div>
           </Col>

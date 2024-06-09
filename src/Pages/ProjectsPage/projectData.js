@@ -7,6 +7,9 @@ import {
   SiMongodb,
   SiFirebase,
   SiOpenai,
+  SiUnity,
+  SiCsharp,
+  SiVisualstudio,
 } from 'react-icons/si';
 import { DiReact, DiCss3 } from 'react-icons/di';
 import { AiOutlineTwitter } from 'react-icons/ai';
@@ -21,6 +24,7 @@ import EcommerceBackground from '../../Components/img/EcommerceBackground.jpg';
 import StockBackground from '../../Components/img/StockBackground.jpg';
 import PortfolioBackground from '../../Components/img/PortfolioBackground.jpg';
 import TwitterBackground from '../../Components/img/TwitterBackground.jpg';
+import BeaverBreakoutBackground from '../../Components/img/BeaverBreakoutBackground.jpg';
 import GsceHomePage from '../../Components/img/Gsce/GsceHomePage.jpg';
 import GsceDonatePage from '../../Components/img/Gsce/GsceDonatePage.jpg';
 import GsceGrantsPage from '../../Components/img/Gsce/GsceGrantsPage.jpg';
@@ -56,6 +60,10 @@ import MotivationBotAWS from '../../Components/img/MotivationBot/MotivationBotAW
 import MotivationBotJSON from '../../Components/img/MotivationBot/MotivationBotJSON.jpg';
 import MotivationBotTweet from '../../Components/img/MotivationBot/MotivationBotTweet.jpg';
 import MotivationBotFirebase from '../../Components/img/MotivationBot/MotivationBotFirebase.jpg';
+import BeaverBreakoutHomeScreen from '../../Components/img/BeaverBreakout/BeaverBreakoutHomeScreen.jpg';
+import BeaverBreakoutNavMeshFloor from '../../Components/img/BeaverBreakout/BeaverBreakoutNavMeshFloop.jpg';
+import BeaverBreakoutItemHighlight from '../../Components/img/BeaverBreakout/BeaverBreakoutItemHighlight.jpg';
+import BeaverBreakoutBuilding from '../../Components/img/BeaverBreakout/BeaverBreakoutBuilding.jpg';
 
 export const projectData = [
   {
@@ -254,7 +262,7 @@ export const projectData = [
       'This was a 2 month experiment to see the results of consistent media posting over a long period of time. Beginning in September of 2023, the bot posts 2 tweets every day.',
     features: [
       'Firebase function authenticates bot to twitter account, generates tweet using OpenAI API, then posts the tweet.',
-      'Previously generated responses are stored in a Firebase db in order to ensure generated tweets are new and unique from previous ones.',
+      'Previously generated responses are stored in a Firebase database in order to ensure generated tweets are new and unique from previous ones.',
       'AWS Event Bridge executes this script twice a day, creating a 100% autonomous system that generates new content daily.',
     ],
     languages: [
@@ -271,6 +279,30 @@ export const projectData = [
       MotivationBotAWS,
     ],
     code: 'https://github.com/cshafizadeh/XBot',
+  },
+  {
+    id: 'beaver-breakout',
+    title: 'BEAVER BREAKOUT',
+    link: '',
+    embed: '',
+    background: BeaverBreakoutBackground,
+    description:
+      'The retro theme of BeaverHacks Spring 2024 inspired us to create Beaver-Breakout, a nostalgic game reminiscent of the classic arcade games we grew up with. We wanted to evoke the same excitement and simplicity that defined early video games, while adding modern twists to keep it engaging.',
+    features: [
+      'Utilizes NavMesh surface and agent to scan the building floors and generate mappings of where the beavers can run, implementing an efficient AI system into the beavers to chase the player in a 3-D space.',
+      'Items have custom material shader applied when player enters their mesh collider, making it easier for the user to spot items they can pick up. Player gains points for picking up items.',
+      'Bottom-level doors keep track of players score, only opening once the player has reached a certain score.',
+      'Custom player movement script built, tested, and refined to create the best performance for the user.',
+      'Scenes built using publicly available assets, along with the terrain, foliage, and detail tools.',
+    ],
+    languages: [<SiUnity />, <SiCsharp />, <FiFigma />, <SiVisualstudio />],
+    images: [
+      BeaverBreakoutHomeScreen,
+      BeaverBreakoutNavMeshFloor,
+      BeaverBreakoutItemHighlight,
+      BeaverBreakoutBuilding,
+    ],
+    code: 'https://github.com/cshafizadeh/Hackathon-Project',
   },
 ];
 

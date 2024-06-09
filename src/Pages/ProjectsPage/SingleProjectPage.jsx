@@ -134,32 +134,6 @@ export default function SingleProjectPage() {
                     );
                   })}
                 </div>
-                {project.title === 'TWITTER BOT' ? (
-                  <div className="my-3">
-                    <h3>TRY IT OUT! </h3>
-                    Go to{' '}
-                    <a
-                      className="twitterLink"
-                      href="https://us-central1-xbot-a5127.cloudfunctions.net/tweet"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      https://us-central1-xbot-a5127.cloudfunctions.net/tweet
-                    </a>{' '}
-                    and wait for a response. Then, check out{' '}
-                    <a
-                      className="twitterLink"
-                      href="https://twitter.com/MotivativeWords"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      https://twitter.com/MotivativeWords
-                    </a>{' '}
-                    to view your newly posted tweet!
-                  </div>
-                ) : (
-                  <></>
-                )}
                 <div className="languages mx-3">
                   {project.languages.map((language, key) => {
                     return (
