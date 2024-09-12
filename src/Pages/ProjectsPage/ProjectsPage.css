@@ -54,3 +54,18 @@
 .singleProjectCarousel {
   border: 1px solid #ffffff;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 10px; /* Add some padding */
+  border-radius: 50%; /* Make the background circular */
+  margin: 10px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto; /* Adjust the width if needed */
+}
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker on hover */
+}

@@ -10,6 +10,13 @@ import {
   SiUnity,
   SiCsharp,
   SiVisualstudio,
+  SiPython,
+  SiNumpy,
+  SiPandas,
+  SiScikitlearn,
+  SiFlask,
+  SiBootstrap,
+  SiMicrosoftsqlserver,
 } from 'react-icons/si';
 import { DiReact, DiCss3 } from 'react-icons/di';
 import { AiOutlineTwitter } from 'react-icons/ai';
@@ -25,6 +32,7 @@ import StockBackground from '../../Components/img/StockBackground.jpg';
 import PortfolioBackground from '../../Components/img/PortfolioBackground.jpg';
 import TwitterBackground from '../../Components/img/TwitterBackground.jpg';
 import BeaverBreakoutBackground from '../../Components/img/BeaverBreakoutBackground.jpg';
+import SpotifyBackground from '../../Components/img/SpotifyBackground.jpg';
 import GsceHomePage from '../../Components/img/Gsce/GsceHomePage.jpg';
 import GsceDonatePage from '../../Components/img/Gsce/GsceDonatePage.jpg';
 import GsceGrantsPage from '../../Components/img/Gsce/GsceGrantsPage.jpg';
@@ -64,8 +72,96 @@ import BeaverBreakoutHomeScreen from '../../Components/img/BeaverBreakout/Beaver
 import BeaverBreakoutNavMeshFloor from '../../Components/img/BeaverBreakout/BeaverBreakoutNavMeshFloop.jpg';
 import BeaverBreakoutItemHighlight from '../../Components/img/BeaverBreakout/BeaverBreakoutItemHighlight.jpg';
 import BeaverBreakoutBuilding from '../../Components/img/BeaverBreakout/BeaverBreakoutBuilding.jpg';
+import SpotAICreatePlaylistFromPlaylist from '../../Components/img/SpotAI/CreatePlaylistFromPlaylist.jpg';
+import SpotAILandingPage from '../../Components/img/SpotAI/LandingPage.jpg';
+import SpotAIHomePage from '../../Components/img/SpotAI/HomePage.jpg';
+import SpotAICreatingPlaylist from '../../Components/img/SpotAI/CreatingPlaylist.jpg';
+import SpotAICreatedPlaylist from '../../Components/img/SpotAI/CreatedPlaylist.jpg';
+import YoloBackground from '../../Components/img/YoloBackground.jpg';
+import YoloAnnotating from '../../Components/img/Yolo/YoloAnnotating.jpg';
+import YoloTrain from '../../Components/img/Yolo/YoloTrain.jpg';
+import YoloPredictions from '../../Components/img/Yolo/YoloPredictions.jpg';
+import YoloResults from '../../Components/img/Yolo/YoloResults.jpg';
+import RAGBackground from '../../Components/img/RAGBackground.jpg';
+import RAGModelMain from '../../Components/img/RAGModel/RAGModelMain.jpg';
+import RAGModelDB from '../../Components/img/RAGModel/RAGModelDB.jpg';
+import RAGModelTextChunks from '../../Components/img/RAGModel/RAGModelTextChunks.jpg';
+import RAGModelEmbeddings from '../../Components/img/RAGModel/RAGModelEmbeddings.jpg';
 
 export const projectData = [
+  {
+    id: 'openai-rag-model',
+    title: 'RAG Model',
+    link: '',
+    embed: '',
+    background: RAGBackground,
+    description:
+      "This is a Retrieval-Augmented Generation (RAG) project using OpenAI's GPT-based models, coupled with a Microsoft SQL Server database. The core functionality revolves around generating text embeddings from large datasets, such as documents or website content, and storing those embeddings in a vector database for efficient retrieval. The project leverages OpenAI’s embeddings API to create vector representations of text chunks and stores them in SQL Server as binary data.",
+    features: [
+      'RAG Models utilize embeddings, numerical representations of words, to calculate the similarity between user prompts and information stored in a database.',
+      'Documents are segmented into chunks for efficient processing and converted into vectors using the OpenAI embeddings API. These vectors are then stored as binary blobs in an SQL database.',
+      "Upon program execution, stored embeddings are retrieved, converted back to vectors, and compared with the user's prompt through the dot product to identify the top 3 most relevant results.",
+      'A scoring threshold ensures only highly relevant documents are included in the context, preventing unrelated information from influencing responses.',
+      'RAG Models offer a scalable solution for integrating custom knowledge into ChatGPT, enhancing its capabilities with external information.',
+    ],
+    languages: [<SiPython />, <SiMicrosoftsqlserver />, <SiOpenai />],
+    images: [RAGModelMain, RAGModelDB, RAGModelTextChunks, RAGModelEmbeddings],
+    code: 'https://github.com/cshafizadeh/OpenAI-RAG-Model',
+  },
+  {
+    id: 'spot-ai',
+    title: 'SPOTAI',
+    link: '',
+    embed: '',
+    background: SpotifyBackground,
+    description:
+      "SpotAI is a Flask-based web application that generates personalized Spotify playlists using machine learning algorithms. By leveraging Spotify's API and advanced clustering techniques, such as K-Means and Gaussian Mixture Models (GMM), SpotAI analyzes your listening data to create custom playlists tailored to your music preferences.",
+    features: [
+      "Spotify Integration: SpotAI integrates with Spotify's API to access your top tracks, recently played songs, and saved tracks.",
+      'Machine Learning Models: SpotAI uses K-Means and GMM clustering to group similar songs based on their audio features, such as danceability, energy, and tempo.',
+      'Playlist Generation: Automatically creates Spotify playlists with recommended songs based on your listening habits and preferences.',
+      'PCA for Dimensionality Reduction: Principal Component Analysis (PCA) is applied to optimize the clustering process by reducing the number of features.',
+      'Caching for Improved Performance: SpotAI caches API responses and clustering results to enhance performance and minimize API requests.',
+      'Logging: All application activity is logged to provide insights and error tracking.',
+    ],
+    languages: [
+      <SiPython />,
+      <SiNumpy />,
+      <SiPandas />,
+      <SiScikitlearn />,
+      <SiFlask />,
+      <SiJavascript />,
+      <SiBootstrap />,
+      <SiMongodb />,
+    ],
+    images: [
+      SpotAILandingPage,
+      SpotAIHomePage,
+      SpotAICreatingPlaylist,
+      SpotAICreatedPlaylist,
+      SpotAICreatePlaylistFromPlaylist,
+    ],
+    code: 'https://github.com/jonathandow/SpotAI/',
+  },
+  {
+    id: 'yolo-training',
+    title: 'YOLO TRAINING SUITE',
+    link: '',
+    embed: '',
+    background: YoloBackground,
+    description:
+      'This project is a comprehensive solution for object detection training using YOLOv5, providing tools for image collection, annotation, and model training, all in one place.',
+    features: [
+      'Image Collection: Uses BeautifulSoup and "icrawler" to gather images from Google, Bing, and Unsplash, organizing them in the "images" directory.',
+      'Image Processing: ImageDistortion.py modifies image brightness or adds noise for enhanced model training.',
+      'Data Organization: organizeImages.py splits images into "train," "test," and "validate" folders (70-15-15), preparing them for YOLO.',
+      'Annotation: Uses "labelimg" tool for annotation, saving labels and generating a "classes.txt" file for YOLO.',
+      'Model Training and Testing: Trains a YOLOv5 model with yolo.py, and testModel.py tests the model on images, displaying detected objects.',
+    ],
+    languages: [<SiPython />],
+    images: [YoloAnnotating, YoloTrain, YoloPredictions, YoloResults],
+    code: 'https://github.com/cshafizadeh/YoloTrainingSuite',
+  },
   {
     id: 'gsce',
     title: 'GSCE',

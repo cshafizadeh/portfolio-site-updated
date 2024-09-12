@@ -24,7 +24,7 @@ h1 {
   text-align: center;
   transition: all 0.1s ease-in-out;
 }
-.projectsButton:hover button {
+.projectsButton button:hover {
   transform: scale(1.1);
   border: 3px solid #ff6347;
   color: #ff6347;
@@ -54,7 +54,7 @@ h1 {
   font-family: 'inter', sans-serif;
   transition: all 0.1s ease-in-out;
 }
-.allProjectsButton:hover button {
+.allProjectsButton button:hover {
   transform: scale(1.1);
   border: 1px solid #ff6347;
   color: #ff6347;
@@ -76,6 +76,7 @@ h1 {
   transition: all 0.1s ease-in-out;
   overflow: hidden;
   max-width: 95%;
+  cursor: pointer;
 }
 .projectCard:hover {
   transform: scale(1.1);
@@ -118,4 +119,8 @@ h1 {
 }
 .projectCard a:hover {
   color: #ff6347;
+}
+.projectLinks {
+  display: block;
+  font-size: 125%;
 }

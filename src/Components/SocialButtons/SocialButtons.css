@@ -4,6 +4,7 @@
   right: 0;
   margin: 10px;
   display: flex;
+  z-index: 10;
 }
 .buttonContainer {
   margin: 5px;
@@ -11,9 +12,10 @@
   height: 40px;
   border-radius: 20px;
   background-color: #ff6347;
-  text-align: center;
+  display: flex; /* Add this line */
+  align-items: center; /* Add this line */
+  justify-content: center; /* Add this line */
 }
 .buttonContainer i {
   font-size: 25px;
-  padding: 6px;
 }
