@@ -1,4 +1,4 @@
-import RAGBackground from '../../Components/img/RAGBackground.jpg';
+import RAGBackground from '../../Components/img/beavsAiBackground.jpg';
 import SpotAIBackground from '../../Components/img/SpotifyBackground.jpg';
 import YosemiteBackground from '../../Components/img/YosemiteBackground.jpg';
 import EcommerceBackground from '../../Components/img/EcommerceBackground.jpg';
@@ -17,12 +17,12 @@ export const homeProjectData = [
     visit: '',
   },
   {
-    id: 'openai-rag-model',
-    title: 'RAG Model',
+    id: 'beavsai',
+    title: 'BeavsAI',
     description:
-      "Retrieval-Augmented Generation (RAG) project using OpenAI's GPT-based models, coupled with a Microsoft SQL Server database. The project leverages OpenAI’s embeddings API to create vector representations of text chunks and stores them in SQL Server as binary data.",
+      "Beavs AI is an application that provides an AI Chatbot that is knowledgeable about OSU's courses. It allows OSU students to interact with an AI agent that can answer course-specific questions.",
     background: RAGBackground,
-    github: 'https://github.com/cshafizadeh/OpenAI-RAG-Model',
+    github: 'https://github.com/OSU-App-Club/beavsai',
     video: '',
     visit: '',
   },

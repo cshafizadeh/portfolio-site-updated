@@ -16,7 +16,10 @@ import {
   SiScikitlearn,
   SiFlask,
   SiBootstrap,
-  SiMicrosoftsqlserver,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiPostgresql,
+  SiSupabase,
 } from 'react-icons/si';
 import { DiReact, DiCss3 } from 'react-icons/di';
 import { AiOutlineTwitter } from 'react-icons/ai';
@@ -82,31 +85,39 @@ import YoloAnnotating from '../../Components/img/Yolo/YoloAnnotating.jpg';
 import YoloTrain from '../../Components/img/Yolo/YoloTrain.jpg';
 import YoloPredictions from '../../Components/img/Yolo/YoloPredictions.jpg';
 import YoloResults from '../../Components/img/Yolo/YoloResults.jpg';
-import RAGBackground from '../../Components/img/RAGBackground.jpg';
-import RAGModelMain from '../../Components/img/RAGModel/RAGModelMain.jpg';
-import RAGModelDB from '../../Components/img/RAGModel/RAGModelDB.jpg';
-import RAGModelTextChunks from '../../Components/img/RAGModel/RAGModelTextChunks.jpg';
-import RAGModelEmbeddings from '../../Components/img/RAGModel/RAGModelEmbeddings.jpg';
+import BeavsAiBackground from '../../Components/img/beavsAiBackground.jpg';
+import beavsAiHome from '../../Components/img/RAGModel/beavsAiHome.jpg';
+import beavsAiChat1 from '../../Components/img/RAGModel/beavsAiChat1.jpg';
+import beavsAiChat2 from '../../Components/img/RAGModel/beavsAiChat2.jpg';
+import beavsAiFileUpload from '../../Components/img/RAGModel/beavsAiFileUpload.jpg';
+import scribeBackground from '../../Components/img/scribeBackground.jpg';
 
 export const projectData = [
   {
-    id: 'openai-rag-model',
-    title: 'RAG Model',
+    id: 'beavsai',
+    title: 'BEAVS AI',
     link: '',
     embed: '',
-    background: RAGBackground,
+    background: BeavsAiBackground,
     description:
-      "This is a Retrieval-Augmented Generation (RAG) project using OpenAI's GPT-based models, coupled with a Microsoft SQL Server database. The core functionality revolves around generating text embeddings from large datasets, such as documents or website content, and storing those embeddings in a vector database for efficient retrieval. The project leverages OpenAI’s embeddings API to create vector representations of text chunks and stores them in SQL Server as binary data.",
+      'A project made with the OSU App Development Club, Beavs AI is an application that provides an AI Chatbot that is knowledgeable about Oregon State University courses, faculty, and more. It allows OSU students to interact with an AI agent that can answer course-specific questions. I set up the vector database, and created functionality for storing and retrieving embeddings.',
     features: [
-      'RAG Models utilize embeddings, numerical representations of words, to calculate the similarity between user prompts and information stored in a database.',
-      'Documents are segmented into chunks for efficient processing and converted into vectors using the OpenAI embeddings API. These vectors are then stored as binary blobs in an SQL database.',
-      "Upon program execution, stored embeddings are retrieved, converted back to vectors, and compared with the user's prompt through the dot product to identify the top 3 most relevant results.",
+      'Pinecone vector database stores embedding chunks for quick retrieval of relevant documents.',
+      'Documents are segmented into chunks for efficient processing and converted into vectors using the OpenAI embeddings API. These vectors are then stored in the pinecone DB.',
+      "Upon program execution, stored embeddings are retrieved, and compared with the user's prompt through the dot product to identify the top 3 most relevant results.",
       'A scoring threshold ensures only highly relevant documents are included in the context, preventing unrelated information from influencing responses.',
       'RAG Models offer a scalable solution for integrating custom knowledge into ChatGPT, enhancing its capabilities with external information.',
+      'File uploads allow users to share PDFs that can be used by the model for information retrieval.',
+      'Other features include Google Authentication and Cloudfare R2 bucket storage.',
     ],
-    languages: [<SiPython />, <SiMicrosoftsqlserver />, <SiOpenai />],
-    images: [RAGModelMain, RAGModelDB, RAGModelTextChunks, RAGModelEmbeddings],
-    code: 'https://github.com/cshafizadeh/OpenAI-RAG-Model',
+    languages: [
+      <SiNextdotjs />,
+      <SiOpenai />,
+      <SiTailwindcss />,
+      <SiPostgresql />,
+    ],
+    images: [beavsAiHome, beavsAiChat1, beavsAiChat2, beavsAiFileUpload],
+    code: 'https://github.com/OSU-App-Club/beavsai',
   },
   {
     id: 'spot-ai',
@@ -187,6 +198,28 @@ export const projectData = [
     ],
     images: [GsceHomePage, GsceDonatePage, GsceGrantsPage, GsceAboutPage],
     code: '',
+  },
+  {
+    id: 'scribe',
+    title: 'SCRIBE',
+    link: '',
+    embed: 'https://www.youtube.com/embed/l8CQS_XDm5g?si=rnX0mG9cXcLYxJMR',
+    background: scribeBackground,
+    description:
+      'Scribe is a dynamic tool designed to help students convert written text into clear, easily digestible notes. The platform captures lecture or meeting notes, organizes them, and allows students to revisit and edit them as needed.',
+    features: [
+      'Speech-to-Text functionality transcribes lecture audio into text in real time. Users are also able to take personal notes in the notebook. Scribe utilizes ChatGPT API to summarize lecture transcriptions.',
+      'Notebooks have full CRUD functionality and their contents are automatically saved. Notebooks can also be shared with other users.',
+      'Frontend build with Next.js, and backend is built with Supabase. Google authentication is used to login.',
+    ],
+    languages: [
+      <SiNextdotjs />,
+      <SiSupabase />,
+      <SiOpenai />,
+      <SiTailwindcss />,
+    ],
+    images: [],
+    code: 'https://github.com/cshafizadeh/Scribe',
   },
   {
     id: 'sql-database',

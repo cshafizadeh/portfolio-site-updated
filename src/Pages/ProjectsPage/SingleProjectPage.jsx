@@ -70,10 +70,10 @@ export default function SingleProjectPage() {
         <div>
           <iframe
             src={dataEmbed}
-            frameBorder="1"
             allow="autoplay; encrypted-media"
             allowFullScreen
             title="video"
+            style={{ height: '330px' }}
           />{' '}
         </div>
       );

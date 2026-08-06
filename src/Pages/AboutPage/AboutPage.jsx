@@ -26,6 +26,9 @@ import {
   SiUnrealengine,
   SiCypress,
   SiPostman,
+  SiDocker,
+  SiKubernetes,
+  SiPostgresql,
 } from 'react-icons/si';
 import { TbBrandPython } from 'react-icons/tb';
 import { FaNode } from 'react-icons/fa';
@@ -54,6 +57,9 @@ export default function AboutPage() {
     <SiUnrealengine />,
     <SiCypress />,
     <SiPostman />,
+    <SiDocker />,
+    <SiKubernetes />,
+    <SiPostgresql />,
   ];
   return (
     <div id="AboutPage" className="mt-5">
@@ -66,25 +72,14 @@ export default function AboutPage() {
             <h1>ABOUT ME</h1>
             <div className="skillsDescription mx-3 my-5">
               <p>
-                I am a student at the College of Engineering at Oregon State
-                University currently achieving my Bachelors of Science in
-                computer science and a minor in business (June 2025). I
-                currently work as an software engineering intern at Intel, a
-                student researcher in the NVIDIA graphics lab and worked as a
-                Student Software Developer for the Center for Applied Systems
-                and Software{' '}
-                <a
-                  className="aboutLink"
-                  href="https://cass.oregonstate.edu/"
-                  target="_blank"
-                  rel="noreferrer"
-                  title="Center for Applied Systems and Software - Oregon State"
-                >
-                  (CASS)
-                </a>{' '}
-                at Oregon State. My passion is creating unique stylish user
-                experiences that achieve business objectives while scaling and
-                delighting users.
+                I'm a Software Developer at Intel and a graduate student at
+                Oregon State University pursuing a Master of Science in Computer
+                Science. My work spans full-stack development, AI-powered
+                applications, and machine learning, with a focus on building
+                software that simplifies complex problems and improves the way
+                people work. I enjoy taking projects from an idea to a
+                production-ready solution while continually exploring new
+                technologies and approaches.
               </p>
             </div>
           </Col>
